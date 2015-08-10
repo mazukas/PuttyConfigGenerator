@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xs:element name="FileZilla3">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Servers">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Server" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Host" type="xs:string" />
+										<xs:element name="Port" type="xs:int" />
+										<xs:element name="Protocol" type="xs:int" />
+										<xs:element name="Type" type="xs:int" />
+										<xs:element name="User" type="xs:string" />
+										<xs:element name="Logontype" type="xs:int" />
+										<xs:element name="TimezoneOffset" type="xs:string" />
+										<xs:element name="PasvMode" type="xs:string" />
+										<xs:element name="MaximumMultipleConnections" type="xs:int" />
+										<xs:element name="EncodingType" type="xs:string" />
+										<xs:element name="BypassProxy" type="xs:int" />
+										<xs:element name="Name" type="xs:string" />
+										<xs:element name="Comments" type="xs:string" />
+										<xs:element name="LocalDir" type="xs:string" />
+										<xs:element name="RemoteDir" type="xs:string" />
+										<xs:element name="SyncBrowsing" type="xs:int" />
+										<xs:element name="ValueHost" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="name" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string" use="required" />
+			<xs:attribute name="timestamp" type="xs:dateTime" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

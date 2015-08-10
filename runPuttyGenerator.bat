@@ -1,0 +1,1 @@
+java -jar PuttyConfigGenerator-0.0.1-SNAPSHOT-jar-with-dependencies.jar azukasm https://s3.amazonaws.com/puttygeneratorbucket/awsserverslist.txt https://s3.amazonaws.com/puttygeneratorbucket/gcsserverslist.txt /Users/matthewazukas/development/projects/PuttyConfigGenerator/sitemanager.xml /Users/matthewazukas/development/projects/PuttyConfigGenerator/MTPutty.xml

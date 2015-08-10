@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xs:element name="MTPutty">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Globals">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PuttyLocation" type="xs:string" default="D:\tools\PuTTY\PUTTY.exe" />
+							<xs:element name="GUI">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Pos">
+											<xs:complexType>
+												<xs:attribute name="Left" type="xs:int" default="0" />
+												<xs:attribute name="Top" type="xs:int" default="0" />
+												<xs:attribute name="Right" type="xs:int" default="1900" />
+												<xs:attribute name="Bottom" type="xs:int" default="1100" />
+												<xs:attribute name="Maximized" type="xs:int" default="0" />
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="ServersBox">
+											<xs:complexType>
+												<xs:attribute name="Visible" type="xs:int" default="1" />
+												<xs:attribute name="Width" type="xs:int" default="240" />
+												<xs:attribute name="Height" type="xs:int" default="1050" />
+												<xs:attribute name="Dock" type="xs:string" default="Left" />
+												<xs:attribute name="Autohide" type="xs:int" default="0" />
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Toolbar">
+											<xs:complexType>
+												<xs:attribute name="Visible" type="xs:int" default="1" />
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="MainMenu">
+											<xs:complexType>
+												<xs:attribute name="Visible" type="xs:int" default="1" />
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="StartPage">
+											<xs:complexType>
+												<xs:attribute name="HideOnTab" type="xs:int" default="0" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="General">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TabCaption" type="xs:int" default="0" />
+										<xs:element name="NormalTermination" type="xs:int" default="0" />
+										<xs:element name="AbnormalTermination" type="xs:int" default="0" />
+										<xs:element name="QuitNoConfirm" type="xs:int" default="1" />
+										<xs:element name="CloseButtonOnTabs" type="xs:int" default="1" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Servers">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Putty">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Node" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="SavedSession" type="xs:string" default="Default Settings" />
+													<xs:element name="DisplayName" type="xs:string" />
+													<xs:element name="ServerName" type="xs:string" />
+													<xs:element name="PuttyConType" type="xs:int" />
+													<xs:element name="Port" type="xs:int" />
+													<xs:element name="UserName" type="xs:string" />
+													<xs:element name="Password" type="xs:string" />
+													<xs:element name="PasswordDelay" type="xs:int" default="0" />
+													<xs:element name="CLParams" type="xs:string" />
+													<xs:element name="ScriptDelay" type="xs:int" default="0" />
+												</xs:sequence>
+												<xs:attribute name="Type" type="xs:int" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Internals">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Putty" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Recents">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PuttyCon" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Hotkeys">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NextTab" type="xs:int" default="0" />
+							<xs:element name="PrevTab" type="xs:int" default="0" />
+							<xs:element name="AppSwitch" type="xs:int" default="16576" />
+							<xs:element name="acPuttyLocations" type="xs:int" default="0" />
+							<xs:element name="acSettings" type="xs:int" default="0" />
+							<xs:element name="acHideServers" type="xs:int" default="16450" />
+							<xs:element name="acHideMenu" type="xs:int" default="16461" />
+							<xs:element name="acHideToolbar" type="xs:int" default="16468" />
+							<xs:element name="acAddServer" type="xs:int" default="0" />
+							<xs:element name="acAddGroup" type="xs:int" default="0" />
+							<xs:element name="acRemove" type="xs:int" default="0" />
+							<xs:element name="acDetach" type="xs:int" default="0" />
+							<xs:element name="acConnect" type="xs:int" default="0" />
+							<xs:element name="acConnectTo" type="xs:int" default="16459" />
+							<xs:element name="acTreeProps" type="xs:int" default="0" />
+							<xs:element name="acSendScript" type="xs:int" default="0" />
+							<xs:element name="acAttach" type="xs:int" default="0" />
+							<xs:element name="acRenameTab" type="xs:int" default="0" />
+							<xs:element name="acImportTree" type="xs:int" default="0" />
+							<xs:element name="acExportTree" type="xs:int" default="0" />
+							<xs:element name="acHotkeyMap" type="xs:int" default="0" />
+							<xs:element name="acDuplicate" type="xs:int" default="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:double" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

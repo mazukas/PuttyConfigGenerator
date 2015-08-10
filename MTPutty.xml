@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MTPutty version="1.0">
+    <Globals>
+        <PuttyLocation>D:\tools\PuTTY\PUTTY.EXE</PuttyLocation>
+        <GUI>
+            <Pos Left="0" Top="0" Right="1900" Bottom="1150" Maximized="0"/>
+            <ServersBox Visible="1" Width="240" Height="1050" Dock="Left" Autohide="0"/>
+            <Toolbar Visible="1"/>
+            <MainMenu Visible="1"/>
+            <StartPage HideOnTab="0"/>
+        </GUI>
+        <General>
+            <TabCaption>0</TabCaption>
+            <NormalTermination>0</NormalTermination>
+            <AbnormalTermination>0</AbnormalTermination>
+            <QuitNoConfirm>0</QuitNoConfirm>
+            <CloseButtonOnTabs>1</CloseButtonOnTabs>
+        </General>
+    </Globals>
+    <Servers>
+        <Putty>
+            <Node Type="1">
+                <SavedSession>Default Settings</SavedSession>
+                <DisplayName>Name1</DisplayName>
+                <ServerName>Host1</ServerName>
+                <PuttyConType>4</PuttyConType>
+                <Port>1</Port>
+                <UserName>azukasm</UserName>
+                <PasswordDelay>0</PasswordDelay>
+                <CLParams>Host1 -ssh -P 1 -l azukasm</CLParams>
+                <ScriptDelay>0</ScriptDelay>
+            </Node>
+            <Node Type="1">
+                <SavedSession>Default Settings</SavedSession>
+                <DisplayName>Name2</DisplayName>
+                <ServerName>Host2</ServerName>
+                <PuttyConType>4</PuttyConType>
+                <Port>2</Port>
+                <UserName>azukasm</UserName>
+                <PasswordDelay>0</PasswordDelay>
+                <CLParams>Host2 -ssh -P 2 -l azukasm</CLParams>
+                <ScriptDelay>0</ScriptDelay>
+            </Node>
+            <Node Type="1">
+                <SavedSession>Default Settings</SavedSession>
+                <DisplayName>Name3</DisplayName>
+                <ServerName>Host3</ServerName>
+                <PuttyConType>4</PuttyConType>
+                <Port>3</Port>
+                <UserName>azukasm</UserName>
+                <PasswordDelay>0</PasswordDelay>
+                <CLParams>Host3 -ssh -P 3 -l azukasm</CLParams>
+                <ScriptDelay>0</ScriptDelay>
+            </Node>
+            <Node Type="1">
+                <SavedSession>Default Settings</SavedSession>
+                <DisplayName>GCSName1</DisplayName>
+                <ServerName>GCSHost1</ServerName>
+                <PuttyConType>4</PuttyConType>
+                <Port>1</Port>
+                <UserName>azukasm</UserName>
+                <PasswordDelay>0</PasswordDelay>
+                <CLParams>GCSHost1 -ssh -P 1 -l azukasm</CLParams>
+                <ScriptDelay>0</ScriptDelay>
+            </Node>
+            <Node Type="1">
+                <SavedSession>Default Settings</SavedSession>
+                <DisplayName>GCSName2</DisplayName>
+                <ServerName>GCSHost2</ServerName>
+                <PuttyConType>4</PuttyConType>
+                <Port>2</Port>
+                <UserName>azukasm</UserName>
+                <PasswordDelay>0</PasswordDelay>
+                <CLParams>GCSHost2 -ssh -P 2 -l azukasm</CLParams>
+                <ScriptDelay>0</ScriptDelay>
+            </Node>
+            <Node Type="1">
+                <SavedSession>Default Settings</SavedSession>
+                <DisplayName>GCSName3</DisplayName>
+                <ServerName>GCSHost3</ServerName>
+                <PuttyConType>4</PuttyConType>
+                <Port>3</Port>
+                <UserName>azukasm</UserName>
+                <PasswordDelay>0</PasswordDelay>
+                <CLParams>GCSHost3 -ssh -P 3 -l azukasm</CLParams>
+                <ScriptDelay>0</ScriptDelay>
+            </Node>
+        </Putty>
+    </Servers>
+    <Internals/>
+    <Recents/>
+    <Hotkeys>
+        <NextTab>0</NextTab>
+        <PrevTab>0</PrevTab>
+        <AppSwitch>16576</AppSwitch>
+        <acPuttyLocations>0</acPuttyLocations>
+        <acSettings>0</acSettings>
+        <acHideServers>16450</acHideServers>
+        <acHideMenu>16461</acHideMenu>
+        <acHideToolbar>16468</acHideToolbar>
+        <acAddServer>0</acAddServer>
+        <acAddGroup>0</acAddGroup>
+        <acRemove>0</acRemove>
+        <acDetach>0</acDetach>
+        <acConnect>0</acConnect>
+        <acConnectTo>16459</acConnectTo>
+        <acTreeProps>0</acTreeProps>
+        <acSendScript>0</acSendScript>
+        <acAttach>0</acAttach>
+        <acRenameTab>0</acRenameTab>
+        <acImportTree>0</acImportTree>
+        <acExportTree>0</acExportTree>
+        <acHotkeyMap>0</acHotkeyMap>
+        <acDuplicate>0</acDuplicate>
+    </Hotkeys>
+</MTPutty>
